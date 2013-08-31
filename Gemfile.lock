@@ -1,3 +1,25 @@
+GIT
+  remote: git://github.com/refinery/refinerycms-blog.git
+  revision: 0b27bed872bcfc95b0e1688151b0dc20789b2b54
+  branch: master
+  specs:
+    refinerycms-blog (2.1.0)
+      acts-as-taggable-on
+      filters_spam (~> 0.2)
+      friendly_id (~> 4.0.4)
+      rails_autolink (~> 1.0.7)
+      refinerycms-core (~> 2.1.0)
+      refinerycms-settings (~> 2.1.0)
+      seo_meta (~> 1.4.0)
+
+GIT
+  remote: git://github.com/refinery/refinerycms-settings.git
+  revision: fd306139bc11c17ac9b4f43bf9f4394af6743bc3
+  branch: master
+  specs:
+    refinerycms-settings (2.1.0)
+      refinerycms-core (>= 2.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,6 +50,8 @@ GEM
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
+    acts-as-taggable-on (2.4.1)
+      rails (>= 3, < 5)
     acts_as_indexed (0.8.3)
     addressable (2.3.5)
     arel (3.0.2)
@@ -56,6 +80,7 @@ GEM
     erubis (2.7.0)
     excon (0.25.3)
     execjs (2.0.1)
+    filters_spam (0.3)
     fog (1.15.0)
       builder
       excon (~> 0.25.0)
@@ -93,18 +118,20 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.24)
+    mime-types (1.25)
+    mini_portile (0.5.1)
     multi_json (1.7.9)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.6.8)
     netrc (0.7.7)
-    nokogiri (1.5.3)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
     orm_adapter (0.4.0)
     paper_trail (2.7.2)
       activerecord (~> 3.0)
       railties (~> 3.0)
-    pg (0.13.2)
+    pg (0.16.0)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -123,6 +150,8 @@ GEM
       railties (= 3.2.13)
     rails-i18n (0.7.4)
       i18n (~> 0.5)
+    rails_autolink (1.0.9)
+      rails (~> 3.1)
     railties (3.2.13)
       actionpack (= 3.2.13)
       activesupport (= 3.2.13)
@@ -183,7 +212,7 @@ GEM
     routing-filter (0.3.1)
       actionpack
     ruby-hmac (0.4.0)
-    rubyzip (0.9.9)
+    rubyzip (1.0.0)
     sass (3.2.10)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -223,6 +252,8 @@ DEPENDENCIES
   rails (= 3.2.13)
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
+  refinerycms-blog!
+  refinerycms-settings!
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

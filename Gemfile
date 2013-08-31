@@ -45,6 +45,8 @@ gem 'refinerycms', '~> 2.1.0'
 # Optionally, specify additional Refinery CMS Extensions here:
 gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 #  gem 'refinerycms-blog', '~> 2.1.0'
+gem 'refinerycms-blog', github: 'refinery/refinerycms-blog', branch: 'master'
+gem 'refinerycms-settings', github: 'refinery/refinerycms-settings', branch: 'master'
 #  gem 'refinerycms-inquiries', '~> 2.1.0'
 #  gem 'refinerycms-search', '~> 2.1.0'
 #  gem 'refinerycms-page-images', '~> 2.1.0'
